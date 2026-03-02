@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios JavaScript</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #5387ee;
+            color: #1f2937;
+        }
+
+        main {
+            width: min(92vw, 520px);
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+            padding: 32px 24px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        p {
+            margin-bottom: 24px;
+            font-size: 1rem;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            background: #2563eb;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 700;
+            transition: background 0.2s ease;
+        }
+
+        a:hover {
+            background: #1e4fb9;
+        }
+
+        .contato {
+            position: fixed;
+            right: 16px;
+            bottom: 12px;
+            font-size: 0.9rem;
+            color: #000000;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            margin: 0;
+        }
+
+        .credit a {
+            display: inline;
+            background: rgb(0, 0, 0);
+            color: #e9e9e9;
+            padding: 0;
+            border-radius: 0;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Olá!</h1>
+        <p>Escolha uma das opções:</p>
+        <nav>
+            <a href="calculadoraIMC.html">Calculadora IMC</a>
+            <a href="calculadoraSimples.html">Calculadora Completa</a>
+            <a href="verificadorIdade.html">Contador de Idade</a>
+            <a href="contadorLoop.html">Contador Loop</a>
+        </nav>
+    </main>
+    <p class="contato">
+        Criador: Arthur Henrique de Paula Barbosa
+        <a href="https://github.com/Arthx" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+</body>
+</html>

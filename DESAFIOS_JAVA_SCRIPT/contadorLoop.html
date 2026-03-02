@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Loop</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ecfeff;
+            padding: 16px;
+            color: #0f172a;
+        }
+
+        .card {
+            width: min(100%, 460px);
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+            padding: 24px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 14px;
+        }
+
+        .inputs {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: 700;
+        }
+
+        input, button {
+            width: 100%;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        input {
+            border: 1px solid #cbd5e1;
+        }
+
+        button {
+            border: none;
+            background: #0891b2;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        #resultado {
+            margin-top: 14px;
+            padding: 10px;
+            background: #f8fafc;
+            border-radius: 8px;
+            min-height: 60px;
+            white-space: pre-wrap;
+        }
+
+        .voltar {
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .voltar a {
+            text-decoration: none;
+            color: #0e7490;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <h1>Contador Loop</h1>
+        <div class="inputs">
+            <label for="inicio">Início</label>
+            <input id="inicio" type="number" value="1">
+            <label for="fim">Fim</label>
+            <input id="fim" type="number" value="10">
+            <label for="passo">Passo</label>
+            <input id="passo" type="number" value="1" min="1">
+            <button id="contar">Contar</button>
+        </div>
+        <p id="resultado"></p>
+        <p class="voltar"><a href="index.html">Voltar para o menu</a></p>
+    </main>
+    <script src="contadorLoop.js"></script>
+</body>
+</html>

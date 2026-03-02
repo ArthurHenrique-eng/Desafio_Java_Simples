@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Idade</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #eef2ff;
+            padding: 16px;
+            color: #111827;
+        }
+
+        .card {
+            width: min(100%, 420px);
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+            padding: 24px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 14px;
+        }
+
+        label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        input, button {
+            width: 100%;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        input {
+            border: 1px solid #cbd5e1;
+            margin-bottom: 10px;
+        }
+
+        button {
+            border: none;
+            background: #2563eb;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        #resultado {
+            margin-top: 14px;
+            text-align: center;
+            min-height: 24px;
+        }
+
+        .voltar {
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .voltar a {
+            text-decoration: none;
+            color: #1d4ed8;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <h1>Contador de Idade</h1>
+        <label for="nascimento">Data de nascimento</label>
+        <input id="nascimento" type="date">
+        <button id="calcularIdade">Calcular idade</button>
+        <p id="resultado"></p>
+        <p class="voltar"><a href="index.html">Voltar para o menu</a></p>
+    </main>
+    <script src="verificadorIdade.js"></script>
+</body>
+</html>
